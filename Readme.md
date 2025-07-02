@@ -89,9 +89,12 @@ edublog-frontend/
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
 
-- Your Name - Initial work
+## 👥 Authors
+- SHATAKSHI PALLI
+- ACHA SRIDATTA VARMA
+- MEGHANA BAJJURI
+- MOHAMMED ABBU HUZAIFA
 
 ## 🙏 Acknowledgments
 
@@ -193,5 +196,3 @@ This project is licensed under the MIT License.
 - All contributors and supporters
 
 ---
-
-**Repository:** [https://github.com/ShatakshiPalli/MiniProject_Backend.git](https://github.com/ShatakshiPalli/MiniProject_Backend.git) 
