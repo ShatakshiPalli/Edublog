@@ -100,7 +100,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Create React App team
 - TailwindCSS team
-- All contributors and supporters
+- All contributors and sup@porters
 
 ---
 
