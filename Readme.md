@@ -1,198 +1,177 @@
-# EDUBLOG Frontend
+# 🧠 EduBlog – Educational Blogging Platform
 
-A modern, responsive blogging platform frontend built with React, designed specifically for educational content sharing and learning management.
+**EduBlog** is a modern, full-stack blogging platform built for educational content sharing and learning management. It features a responsive user interface, rich-text and markdown editing, authentication, and scalable backend APIs.
+
+> 🔗 **Live Demo:** [https://edublog-front-deploy.vercel.app/](https://edublog-front-deploy.vercel.app/)
+
+---
+
+## 📁 Repositories
+
+- **Frontend Repo:** [ShatakshiPalli/EduBlog_frontend](https://github.com/ShatakshiPalli/EduBlog_frontend)
+- **Backend Repo:** [ShatakshiPalli/MiniProject_Backend](https://github.com/ShatakshiPalli/MiniProject_Backend)
+
+---
 
 ## 🚀 Features
 
-- Modern and responsive user interface
-- Rich text editing with Quill editor
-- Markdown support for content creation
-- User authentication and authorization
-- Blog post creation, editing, and management
-- Educational content organization
-- Responsive design for all devices
+- ✅ Modern and responsive UI with Tailwind CSS
+- ✍️ Rich text editing (Quill) & Markdown support
+- 🔐 User authentication and role-based authorization
+- 📝 Blog creation, editing, deletion, and viewing
+- 📁 Organized educational content
+- 📱 Mobile-first responsive design
+- 🛠️ RESTful backend APIs with Spring Boot
+
+---
 
 ## 🛠️ Tech Stack
 
-- **React.js** - Frontend library
-- **React Router** - Navigation and routing
-- **Axios** - HTTP client for API requests
-- **TailwindCSS** - Utility-first CSS framework
-- **Quill** - Rich text editor
-- **Marked** - Markdown parsing
-- **TurnDown** - HTML to Markdown conversion
+### 🔹 Frontend
+- **React.js** – Component-based frontend library
+- **React Router** – Navigation and routing
+- **Axios** – API request handling
+- **TailwindCSS** – Utility-first CSS framework
+- **Quill** – Rich text editor
+- **Marked & Turndown** – Markdown parsing and HTML conversion
+
+### 🔹 Backend
+- **Java 11** – Core backend language
+- **Spring Boot** – Backend framework
+- **Maven** – Build and dependency management
+- **JPA/Hibernate** – ORM for data persistence
+- **MySQL/PostgreSQL** – Relational database (configurable)
+
+---
 
 ## 📋 Prerequisites
 
-Before running this project, make sure you have:
+Make sure you have the following installed:
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-- Git
+- **Node.js** (v14+)
+- **npm** (v6+)
+- **JDK 11** or higher
+- **Maven 3.2+**
+- **Git**
+
+---
 
 ## 🔧 Installation
 
-1. Clone the repository:
+### 1️⃣ Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/edublog-frontend.git
-cd edublog-frontend
+git clone https://github.com/ShatakshiPalli/EduBlog.git
+cd EduBlog
 ```
 
-2. Install dependencies:
+---
+
+### 2️⃣ Frontend Setup
+
 ```bash
+cd EduBlog_frontend
 npm install
 ```
 
-3. Create a `.env` file in the root directory and add necessary environment variables:
-```env
-REACT_APP_API_URL=your_backend_api_url
+> Create a `.env` file in `frontend/`:
+```
+REACT_APP_API_URL=http://localhost:8080
 ```
 
-4. Start the development server:
 ```bash
 npm start
 ```
 
-The application will be available at `http://localhost:3000`
+The frontend will be available at: `http://localhost:3000`
+
+---
+
+### 3️⃣ Backend Setup
+
+```bash
+cd Backend
+mvn clean install
+```
+
+> Edit `src/main/resources/application.properties`:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/edublog
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+```
+
+```bash
+mvn spring-boot:run
+```
+
+The backend API will run at: `http://localhost:8080`
+
+---
 
 ## 🏗️ Project Structure
 
 ```
-edublog-frontend/
-├── public/             # Static files
-├── src/               # Source code
-│   ├── components/    # Reusable components
-│   ├── pages/        # Page components
-│   ├── services/     # API services
-│   ├── utils/        # Utility functions
-│   └── App.js        # Main application component
-├── package.json      # Project dependencies and scripts
-└── tailwind.config.js # Tailwind CSS configuration
+EduBlog_frontend/
+├── frontend/               # React frontend
+│   ├── src/
+│   ├── public/
+│   └── .env
+├── Backend/                # Spring Boot backend
+│   ├── src/
+│   │   ├── main/java/com/edublog/
+│   │   └── resources/
+│   └── pom.xml
+└── README.md               # Project documentation
 ```
+
+---
 
 ## 🚀 Available Scripts
 
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App
+### Frontend
+- `npm start` – Start development server
+- `npm test` – Run tests
+- `npm run build` – Build for production
+
+### Backend
+- `mvn spring-boot:run` – Start the Spring Boot application
+- `mvn test` – Run unit tests
+- `mvn clean install` – Build the project
+
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+1. Fork the repo
+2. Create your branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+---
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the **MIT License** – see the `LICENSE` file for details.
 
+---
 
 ## 👥 Authors
-- SHATAKSHI PALLI
-- ACHA SRIDATTA VARMA
-- MEGHANA BAJJURI
-- MOHAMMED ABBU HUZAIFA
+
+- **Shatakshi Palli**
+- **Acha Sridatta Varma**
+- **Meghana Bajjuri**
+- **Mohammed Abbu Huzaifa**
+
+---
 
 ## 🙏 Acknowledgments
 
-- Create React App team
-- TailwindCSS team
-- All contributors and sup@porters
-
----
-
-# EDUBLOG Backend
-
-A modern, scalable backend for the EduBlog platform, built with Java and Spring Boot.
-
----
-
-## 🚀 Features
-- RESTful API endpoints for content management
-- User authentication and authorization
-- Scalable architecture ready for deployment
-- Robust data handling and business logic
-
-## 🛠️ Tech Stack
-- **Java** – Core programming language
-- **Spring Boot** – Application framework
-- **Maven** – Dependency management and build tool
-- **JPA/Hibernate** – Database persistence (Assumed)
-- **MySQL/PostgreSQL** – Relational database (Assumed)
-
-## 📋 Prerequisites
-Before running this project, make sure you have:
-- JDK 11 or higher
-- Maven 3.2 or higher
-- Git
-
-## 🔧 Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ShatakshiPalli/MiniProject_Backend.git
-   cd MiniProject_Backend
-   ```
-2. **Build the project:**
-    This command compiles the source code and packages it into a `.jar` file.
-   ```bash
-   mvn clean install
-   ```
-3. **Configure the application:**
-   Open `src/main/resources/application.properties` and update the database connection details and other environment-specific settings.
-   
-4. **Run the application:**
-   ```bash
-   mvn spring-boot:run
-   ```
-   The backend API will be available at `http://localhost:8080` (or the configured port).
-
-## 🏗️ Project Structure
-```
-MiniProject_Backend/
-├── .mvn/
-├── src/
-│   ├── main/
-│   │   ├── java/com/edublog/          # Source code
-│   │   │   ├── config/                # Spring configuration
-│   │   │   ├── controller/            # API controllers
-│   │   │   ├── model/                 # Data models (Entities)
-│   │   │   ├── repository/            # Data repositories
-│   │   │   └── service/               # Business logic
-│   │   └── resources/                 # Application properties, static assets
-│   └── test/
-├── .gitignore
-├── mvnw
-├── mvnw.cmd
-├── pom.xml                            # Project dependencies and plugins
-```
-
-## 🚀 Available Scripts
-- `mvn clean install` – Compiles, tests, and packages the application.
-- `mvn spring-boot:run` – Runs the application using the Spring Boot Maven plugin.
-- `mvn test` – Runs the unit tests for the project.
-
-## 🤝 Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-This project is licensed under the MIT License.
-
-## 👥 Authors
-- SHATAKSHI PALLI
-- ACHA SRIDATTA VARMA
-- MEGHANA BAJJURI
-- MOHAMMED ABBU HUZAIFA
-
-## 🙏 Acknowledgments
-- Spring Boot team
-- Maven community
-- All contributors and supporters
-
----
+- [Create React App](https://create-react-app.dev/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Quill](https://github.com/zenoamaro/react-quill)
+- All contributors and supporters 💙
